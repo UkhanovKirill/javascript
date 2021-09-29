@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        //10 + 10 + "10" - действия идут слева направа 10 + 10 = 20, + "10" (строка) = 2010 (строка)
+        console.log(10 + 10 + "10");
+        //10 + "10" + 10 - 10 + "10" (строка) = 1010 (строка), + 10 = 101010 (строка)
+        console.log(10 + "10" + 10);
+        //10 + 10 + +"10" - 10 + 10 = 20, +"10" (+ унарный) = 30
+        console.log(10 + 10 + +"10");
+        //10 / -"" - 10 / -0 = -Infinity
+        console.log(10 / -"");
+        //10 / +"2,5" - из-за , 2,5 не приводится к числу и получается NaN
+        console.log(10 / +"2,5");
+    </script>
+</body>
+
+</html>
